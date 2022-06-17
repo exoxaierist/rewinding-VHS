@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;900&display=swap');
+@font-face {
+    font-family: VCR;
+    src: url(VCR-OSD-MONO.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+}
+#container{
+    display:flex;
+    flex-direction: row;
+    width: 815px;
+    margin: auto;
+}
+#section{
+    width: 430px;
+    height: 640px;
+    
+}
+#imgShowcase{
+    filter: blur(0.7px);
+    border: solid;
+    border-width: 0.1px;
+    border-color: #d9d9d977;
+}
+#imgContainer img{
+    display: none;
+    position: absolute;
+    filter: blur(0.7px);
+    border: solid;
+    border-width: 0.1px;
+    border-color: #d9d9d922;
+}
+#nav{
+    height: 580px;
+}
+#control{
+    height: 60px;
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+}
+#controlElementText{
+    background-color: none;
+    position: relative;
+    top: 5px;
+    font-family: VCR;
+    font-size: 2rem;
+}
+#controlElementLeft{
+    display: flex;
+    justify-content: right;
+    width: 45%;
+}
+#controlElementMid{
+    display: flex;
+    justify-content: center;
+    width: 10%;
+}
+#controlElementRight{
+    display: flex;
+    justify-content: left;
+    width: 45%;
+}
+#title{
+    height: 41px;
+    background-color: #d9d9d9;
+    color: black;
+}
+#titleText{
+    background-color: none;
+    position: relative;
+    top: -5px;
+    font-family: VCR;
+    font-size: 5.2rem;
+}
+#menuContainer{
+    padding: 0px;
+}
+#menu{
+    display: flex;
+    justify-content: space-between;
+    height: 37px;
+}
+#menuText{
+    background-color: none;
+    position: relative;
+    top: 4px;
+    left: 5px;
+    font-family: VCR;
+    font-size: 3.1rem;
+}
+#menuArrow{
+    background-color: none;
+    color: #d9d9d9;
+    position: relative;
+    top: -40px;
+    left: -45px;
+    font-family: VCR;
+    font-size: 3.1rem;
+    text-shadow: none;
+}
+#menuSel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+}
+#arrowBtn{
+    width: 20%;
+    text-align: center;
+    margin-bottom: 8px;
+    font-family: VCR;
+    font-size: 3.1rem;
+}
+#selGroup{
+    display: flex;
+    justify-content: center;
+}
+#selGroup div{
+    text-align: center;
+    font-family: VCR;
+    font-size: 3.1rem;
+}
+
+.inline{display: inline-block;}
+.flex{display: flex;}
+.flexColumn{flex-direction: column;}
+.flexRow{flex-direction: row;}
+.jBetween{justify-content: space-between;}
+.jEven{justify-content: space-evenly;}
+.jCenter{justify-content: center;}
+.aCenter{align-items: center;}
+.marginAuto{margin: auto;}
+
+.hLine{height: 2px; width: 100%;background-color: #d9d9d9;}
+
+.hGap24{width: 24px;}
+.vGap6{height: 6px;}
+.vGap31{height: 31px;}
+.vGap60{height: 60px;}
+
+.h54{height: 54px;}
+.h59{height: 59px;}
+.h100{height: 100px;}
+.h640{height: 640px;}
+.w1322{width: 1322px;}
+
+.hp50{height: 50%;}
+.hp100{height: 100%;}
+.wp25{width: 25%;}
+.wp30{width: 33.333%;}
+.wp50{width: 50%};
+.wp100{width: 100%;}
+
+.bgGray{background-color: gray;}
+.bgCyan{background-color: cyan;}
+.bgRed{background-color: red;}
+.bgBlue{background-color: blue;}
+.bgGreen{background-color: green;}
+.bgBlack{background-color: black;}
+.bgWhite{background-color: #d9d9d9;}
+.bgNone{background-color: #00000000;}
+.userSel{user-select: none;}
+
+.textVhs{text-shadow: 0.8px 0.8px 0px rgba(255, 0, 255, 0.9), -0.8px -0.8px 0px rgba(0, 255, 0, 0.9);
+    filter: blur(0.7px);
+}
+.textVhsSmall{text-shadow: 0.4px 0.4px 0px rgba(255, 0, 255, 0.9), -0.4px -0.4px 0px rgba(0, 255, 0, 0.9);
+    filter: blur(0.5px);
+}
+.noVhs{text-shadow: none;}
+.boxVhs{box-shadow: 0.8px 0.8px 0px rgba(255, 0, 255, 0.9), -0.8px -0.8px 0px rgba(0, 255, 0, 0.9);
+    filter: blur(0.7px);
+}
+
+.titleSub{
+    font-family: VCR;
+    font-size: 5.2rem;
+}
+.bodySmall{
+    font-family: VCR;
+    font-size: 2rem;
+}
+.cWhite{color: #d9d9d9;}
+.cBlack{color: #000000;}
+.noto{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.8rem;
+    line-height: 3.1rem;
+}
+.tCenter{text-align: center;}
+.lineHeight2{line-height: 0rem;}
+
+.activeWhite{
+    background-color: #d9d9d9;
+}
+.activeBlack{
+    background-color: black;
+}
+.activeTextWhite{
+    color: #d9d9d9;
+}
+.activeTextBlack{
+    color: black;
+}
+.active{
+    display: none;
+}
