@@ -20,6 +20,14 @@
     height: 640px;
     
 }
+#mainImg{
+    display: none;
+    position: absolute;
+    filter: blur(1px);
+    border: solid;
+    border-width: 0.1px;
+    border-color: #d9d9d9;
+}
 #imgShowcase{
     filter: blur(0.7px);
     border: solid;
@@ -167,14 +175,14 @@
 .bgNone{background-color: #00000000;}
 .userSel{user-select: none;}
 
-.textVhs{text-shadow: 0.8px 0.8px 0px rgba(255, 0, 255, 0.9), -0.8px -0.8px 0px rgba(0, 255, 0, 0.9);
+.textVhs{text-shadow: 0.6px 0.6px 0px rgba(255, 0, 255, 0.9), -0.6px -0.6px 0px rgba(0, 255, 0, 0.9);
     filter: blur(0.7px);
 }
 .textVhsSmall{text-shadow: 0.4px 0.4px 0px rgba(255, 0, 255, 0.9), -0.4px -0.4px 0px rgba(0, 255, 0, 0.9);
     filter: blur(0.5px);
 }
 .noVhs{text-shadow: none;}
-.boxVhs{box-shadow: 0.8px 0.8px 0px rgba(255, 0, 255, 0.9), -0.8px -0.8px 0px rgba(0, 255, 0, 0.9);
+.boxVhs{box-shadow: 0.6px 0.6px 0px rgba(255, 0, 255, 0.9), -0.6px -0.6px 0px rgba(0, 255, 0, 0.9);
     filter: blur(0.7px);
 }
 

@@ -1,4 +1,5 @@
 let menuAll = document.querySelectorAll('#menuContainer');
+let imgAll = document.querySelectorAll('#mainImg');
 let currentMenu = 0;
 
 //mouse input
@@ -39,7 +40,7 @@ function MovePage(){
 }
 
 function UpdateElement(){
-    console.log("update element");
+    UpdateImg();
     var temp;
     //remove all
     for (let i = 0; i < menuAll.length; i++) {
@@ -85,4 +86,11 @@ function UpdateElement(){
         temp[j].style.color="#000000";
         temp[j].classList.remove('textVhs');
     }
+}
+
+function UpdateImg(){
+    for (let i = 0; i < imgAll.length; i++) {
+        imgAll[i].style.display = "none";   
+    }  
+    imgAll[currentMenu].style.display = "initial";
 }
