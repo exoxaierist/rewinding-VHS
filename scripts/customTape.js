@@ -26,6 +26,7 @@ for (let i = 0; i < menuAll.length; i++) {
     menuAll[i].addEventListener('click',(e)=>{
         var element = e.currentTarget;
         currentMenu = Array.from(menuAll).indexOf(element);
+        if(currentMenu==4) DownloadImage();
         UpdateElement();
     });
 }
@@ -61,7 +62,7 @@ document.addEventListener('keyup',(e)=>{
 UpdateElement();
 
 function DownloadImage() {
-    html2canvas(document.body, { allowTaint:true, width:360, height:640, x:1007.5, y:134, windowWidth:1920, windowHeight:1080}).then(canvas => {
+    html2canvas(document.body, { useCORS:true, allowTaint:true, width:360, height:640, x:1007.5, y:134, windowWidth:1920, windowHeight:1080}).then(canvas => {
         var a = document.createElement('a');
         a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
         a.download = 'CustomTape.jpg';
